@@ -4,20 +4,27 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		 
+
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o numero1? ");
-		int num1 = sc.nextInt();
-		System.out.println("Digite o numero2? ");
-		int num2 = sc.nextInt();
-		
-		if(num1 % num2 == 0) {
-			System.out.println("SÃO MULTIPLOS");
-		}else if(num2 % num1 == 0) {
-			System.out.println("SÃO MULTIPLOS");
+	    int cod = sc.nextInt();
+	    int quantidade = sc.nextInt();
+		double total;
+		if(cod == 1) {
+			total = quantidade * 4.00;
+		}else if(cod == 2) {
+			total = quantidade * 4.50;
+		}else if(cod == 3) {
+			total = quantidade * 5.00;
+	    }
+		 else if(cod == 4) {
+				total = quantidade * 2.00;
 		}else {
-			System.out.println("NÃO SÃO MULTIPLOS");
+				total = quantidade * 1.50;
 		}
+		System.out.printf("TOTAL %.2f", total);
+		
+	
+		
 		sc.close();
 	}
 
