@@ -7,17 +7,21 @@ public class EstruturaRepeticao {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double largura = sc.nextDouble();
-		double comprimento = sc.nextDouble();
-		double metroQuadrado = sc.nextDouble();
-		
-		double area = largura * comprimento;
-		double preco = area * metroQuadrado;
-		
-		System.out.printf("AREA = %.2f%n", area);
-		System.out.printf("PRECO = %.2f%n", preco);
+		System.out.println("Digite um numero: ");
+		int num = sc.nextInt();
+	    int soma = 0;
+		while(num != 0) {
+			//soma += num;
+			System.out.println("Digite um numero: ");
+			num = sc.nextInt();
+			soma += num;
+			
+			
+		}
+		System.out.println("Soma dos numeros = " + soma);
 		
 		sc.close();
+		
 	}
 
 }
