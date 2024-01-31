@@ -4,16 +4,41 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-        
+
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int min = sc.nextInt();
-		double valor = 50.0;
-		if(min > 100) {
-			valor = valor + (min - 100) *2.0;
+		int x = sc.nextInt();
+		String dia;
+
+		switch (x) {
+		case 1:
+			dia = "domingo";
+			break;
+		case 2:
+			dia = "segunda";
+			break;
+		case 3:
+			dia = "terça";
+			break;
+		case 4:
+			dia = "quarta";
+			break;
+		case 5:
+			dia = "quinta";
+			break;
+		case 6:
+			dia = "sexta";
+			break;
+		case 7:
+			dia = "sabádo";
+			break;
+		default:
+			dia = "dia invalido";
+			break;
 		}
-		System.out.printf("Valor da conta %.2f R$", valor);
+		System.out.println("Dia da semana: " + dia);
+
 	}
 
 }
