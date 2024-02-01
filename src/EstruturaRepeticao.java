@@ -4,24 +4,19 @@ import java.util.Scanner;
 public class EstruturaRepeticao {
 
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
+
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Digite um numero: ");
-		int num = sc.nextInt();
-	    int soma = 0;
-		while(num != 0) {
-			//soma += num;
-			System.out.println("Digite um numero: ");
-			num = sc.nextInt();
-			soma += num;
-			
-			
+
+	int x = sc.nextInt();
+	int impares = 0;
+	for(int i = 0; i <= x; i++) {
+		if(i % 2 !=0) {
+			System.out.println(i);
 		}
-		System.out.println("Soma dos numeros = " + soma);
+	}
+	
 		
 		sc.close();
-		
 	}
 
 }
