@@ -4,30 +4,24 @@ import java.util.Scanner;
 public class EstruturaRepeticao {
 
 	public static void main(String[] args) {
-
+        
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-	int x = sc.nextInt();
-	int in =0;
-	int out =0;
-	int y = 0;
-
-	for(int i = 0; i < x; i++) {
-		y = sc.nextInt();
+	int n = sc.nextInt();
+	for(int i = 0; i < n; i++) {
 		
-		if(y >= 10 && y <=20) {
-			 in += + 1;
-			
-		}else if(y < 10 || y >20) {
-			 out += +1;
-			
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		
+		
+		double div = a / b ;
+		if(b == 0) {
+			System.out.println("Imposivel dividir");
 		}
-	
+		
+		System.out.printf("%.1f", div);
 	}
-	
-	System.out.println("in = " + in);
-	System.out.println("out = " + out);
-	
 		
 		sc.close();
 	}
